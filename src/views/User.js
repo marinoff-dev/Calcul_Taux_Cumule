@@ -40,16 +40,16 @@ function User() {
                         />
                       </FormGroup>
                     </Col>
-                    <Col className="px-1" md="4">
+                    <Col className="px-1" md="5">
 						<FormGroup>
 							<label>Libellé</label>
 							<Input
-							placeholder="Libellé"
-							type="text"
+              					disabled
+								type="text"
 							/>
 						</FormGroup>
                     </Col>
-                    <Col className="pl-1" md="4">
+                    <Col className="pl-1" md="3">
 						<Button
 							className="btn-round"
 							color="primary"
@@ -60,60 +60,61 @@ function User() {
                     </Col>
                   </Row>
 				
-                  <Row>
-                    <Col className="pr-1" md="4">
-                      <FormGroup>
-                        <label>Taux cumulé</label>
-                        <Input
-							disabled
-                          	defaultValue="0.5"
-                          	type="text"
-                        />
-                      </FormGroup>
-                    </Col>
-                    <Col className="pl-1" md="8">
-                      
-                    </Col>
-                  </Row>
+                  <Row className="align-items-center justify-content-between">
+						<Col className="pr-1" md="4">
+							<FormGroup>
+								<label>Taux cumulé</label>
+								<Input
+									disabled
+									defaultValue="0.5"
+									type="text"
+								/>
+							</FormGroup>
+						</Col>
+
+						<Col className="px-1" md="5">
+							<FormGroup>
+								<label>Simuler une valeur</label>
+								<Input
+								placeholder="Entrer une valeur"
+								type="text"
+								/>
+							</FormGroup>
+						</Col>
+
+						<Col className="pl-1" md="3">
+							<Button
+								className="btn-round"
+								color="primary"
+								type="submit"
+							>
+								Calculer
+							</Button>
+						</Col>
+					</Row>
+
 				</Form>
 				<Form>
-				  <Row className="align-items-center justify-content-between">
-                    <Col className="pr-1" md="4">
-                      <FormGroup>
-                        <label>Simuler une valeur</label>
-                        <Input
-                          placeholder="Entrer une valeur"
-                          type="text"
-                        />
-                      </FormGroup>
-                    </Col>
-                    <Col className="px-1" md="4">
-						
-                    </Col>
-                    <Col className="pl-1" md="4">
-						<Button
-							className="btn-round"
-							color="primary"
-							type="submit"
-						>
-							Rechercher
-						</Button>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col md="4">
-                      <FormGroup>
-                        <label>Total DT</label>
-                        <Input
-                          	defaultValue="0.5"
-							disabled
-                          	type="text"
-                        />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  
-                </Form>
+					<Row className="align-items-center justify-content-between">
+						<Col className="pr-1" md="4">
+							
+						</Col>
+						<Col className="px-1" md="3">
+							
+						</Col>
+						<Col className="pl-1" md="4">
+							<FormGroup>
+								<label>Total DT</label>
+								<Input
+									defaultValue="0.5"
+									disabled
+									type="text"
+								/>
+							</FormGroup>
+						</Col>
+					</Row>
+					
+				</Form>
 				<Table responsive>
                   <thead className="text-primary">
                     <tr>
