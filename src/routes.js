@@ -19,11 +19,9 @@
 import Dashboard from "views/Dashboard.js";
 import Tarifs from "views/Tarifs.js";
 import Icons from "views/Icons.js";
-import Typography from "views/Typography.js";
 import TableList from "views/Tables.js";
-import Maps from "views/Map.js";
 import UserPage from "views/User.js";
-import UpgradeToPro from "views/Upgrade.js";
+import Connexion from "views/Connexion.js";
 
 var routes = [
   {
@@ -51,8 +49,8 @@ var routes = [
 
   {
     path: "/user-page",
-    name: "User Profile",
-    icon: "nc-icon nc-single-02",
+    name: "Calcul Taxe",
+    icon: "nc-icon nc-bulb-63",
     component: <UserPage />,
     layout: "/admin",
   },
@@ -78,13 +76,14 @@ var routes = [
     component: <Typography />,
     layout: "/admin",
   },
+  */
   {
     pro: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-spaceship",
-    component: <UpgradeToPro />,
+    path: "/connexion",
+    name: "Déconnexion",
+    icon: "nc-icon nc-circle-10",
+    component: <Connexion />,
     layout: "/admin",
-  },*/
+  }
 ];
 export default routes;

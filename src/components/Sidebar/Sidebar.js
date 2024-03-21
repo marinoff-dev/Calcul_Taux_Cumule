@@ -65,7 +65,7 @@ function Sidebar(props) {
           href=""
           className="simple-text logo-normal"
         >
-          Creative Tim
+          Tarifs Douaniers
         </a>
       </div>
       <div className="sidebar-wrapper" ref={sidebar}>
