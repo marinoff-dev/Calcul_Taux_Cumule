@@ -18,7 +18,7 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Tarifs from "views/Tarifs.js";
-import Icons from "views/Icons.js";
+//import Icons from "views/Icons.js";
 import TableList from "views/Tables.js";
 import UserPage from "views/User.js";
 import Connexion from "views/Connexion.js";
@@ -31,6 +31,7 @@ var routes = [
     component: <Dashboard />,
     layout: "/admin",
   },
+  /*
  {
     path: "/icons",
     name: "Icons",
@@ -38,7 +39,7 @@ var routes = [
     component: <Icons />,
     layout: "/admin",
   },
-  /*
+  
   {
     path: "/maps",
     name: "Maps",
