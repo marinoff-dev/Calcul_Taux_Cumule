@@ -1,5 +1,6 @@
 
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
 
 // reactstrap components
 import {
@@ -10,7 +11,10 @@ import {
   Table,
   Row,
   Col,
+  Button,
+
 } from "reactstrap";
+
 
 function Tables() {
   return (
@@ -41,12 +45,13 @@ function Tables() {
 						<th>AIB</th>
 						<th>TVA</th>
 						<th className="text-right">Taux Cumulé</th>
+						<th className="text-right">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>0207350000</td>
-                      <td>Dakota Rice</td>
+                      <td>-- REPRODUCTEURS DE RACE PURE</td>
                       <td>10</td>
                       <td>0.1</td>
                       <td>0.2</td>
@@ -60,10 +65,15 @@ function Tables() {
                       <td>1.1</td>
                       <td>1.2</td>
                       <td className="text-right">147.13 %</td>
+                      <td className="text-right">
+					  <Link to="/admin/tarifs">
+    						<button className="btn btn-info btn-round">Modifier</button>
+  						</Link>
+					  </td>
                     </tr>
                     <tr>
                       <td>0207350000</td>
-                      <td>Dakota Rice</td>
+                      <td>-- AUTRES</td>
                       <td>10</td>
                       <td>0.1</td>
                       <td>0.2</td>
@@ -77,10 +87,15 @@ function Tables() {
                       <td>1.1</td>
                       <td>1.2</td>
                       <td className="text-right">147.13 %</td>
+					  <td className="text-right">
+					  	<Link to="/admin/tarifs">
+    						<button className="btn btn-info btn-round">Modifier</button>
+  						</Link>
+					  </td>
                     </tr>
                     <tr>
                       <td>0207350000</td>
-                      <td>Dakota Rice</td>
+                      <td>-- REPRODUCTEURS DE RACE PURE</td>
                       <td>10</td>
                       <td>0.1</td>
                       <td>0.2</td>
@@ -94,10 +109,15 @@ function Tables() {
                       <td>1.1</td>
                       <td>1.2</td>
                       <td className="text-right">147.13 %</td>
+					  <td className="text-right">
+					  	<Link to="/admin/tarifs">
+    						<button className="btn btn-info btn-round">Modifier</button>
+  						</Link>
+					  </td>
                     </tr>
                     <tr>
                       <td>0207350000</td>
-                      <td>Dakota Rice</td>
+                      <td>-- AUTRES</td>
                       <td>10</td>
                       <td>0.1</td>
                       <td>0.2</td>
@@ -111,57 +131,11 @@ function Tables() {
                       <td>1.1</td>
                       <td>1.2</td>
                       <td className="text-right">147.13 %</td>
-                    </tr>
-                    <tr>
-                      <td>0207350000</td>
-                      <td>Dakota Rice</td>
-                      <td>10</td>
-                      <td>0.1</td>
-                      <td>0.2</td>
-                      <td>0.3</td>
-                      <td>0.4</td>
-                      <td>0.5</td>
-                      <td>0.6</td>
-                      <td>0.7</td>
-                      <td>0.8</td>
-                      <td>0.9</td>
-                      <td>1.1</td>
-                      <td>1.2</td>
-                      <td className="text-right">147.13 %</td>
-                    </tr>
-                    <tr>
-                      <td>0207350000</td>
-                      <td>Dakota Rice</td>
-                      <td>10</td>
-                      <td>0.1</td>
-                      <td>0.2</td>
-                      <td>0.3</td>
-                      <td>0.4</td>
-                      <td>0.5</td>
-                      <td>0.6</td>
-                      <td>0.7</td>
-                      <td>0.8</td>
-                      <td>0.9</td>
-                      <td>1.1</td>
-                      <td>1.2</td>
-                      <td className="text-right">147.13 %</td>
-                    </tr>
-                    <tr>
-                      <td>0207350000</td>
-                      <td>Dakota Rice</td>
-                      <td>10</td>
-                      <td>0.1</td>
-                      <td>0.2</td>
-                      <td>0.3</td>
-                      <td>0.4</td>
-                      <td>0.5</td>
-                      <td>0.6</td>
-                      <td>0.7</td>
-                      <td>0.8</td>
-                      <td>0.9</td>
-                      <td>1.1</td>
-                      <td>1.2</td>
-                      <td className="text-right">147.13 %</td>
+					  <td className="text-right">
+					  	<Link to="/admin/tarifs">
+    						<button className="btn btn-info btn-round">Modifier</button>
+  						</Link>
+					  </td>
                     </tr>
                   </tbody>
                 </Table>
@@ -175,4 +149,7 @@ function Tables() {
   );
 }
 
+
+
 export default Tables;
+  

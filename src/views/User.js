@@ -129,55 +129,55 @@ function User() {
                       <td>PC</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">36,738</td>
+                      <td className="text-right">00</td>
                     </tr>
                     <tr>
                       <td>PS</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">23,789</td>
+                      <td className="text-right">00</td>
                     </tr>
                     <tr>
                       <td>PCS</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">56,142</td>
+                      <td className="text-right">00</td>
                     </tr>
                     <tr>
                       <td>RS</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">38,735</td>
+                      <td className="text-right">00</td>
                     </tr>
                     <tr>
                       <td>RAU</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">63,542</td>
+                      <td className="text-right">00</td>
                     </tr>
                     <tr>
                       <td>DD</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">78,615</td>
+                      <td className="text-right">00</td>
                     </tr>
                     <tr>
                       <td>DA</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">98,615</td>
+                      <td className="text-right">00</td>
                     </tr>
 					<tr>
                       <td>TST</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">98,615</td>
+                      <td className="text-right">00</td>
                     </tr>
 					<tr>
                       <td>TVA</td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
-                      <td className="text-right">98,615</td>
+                      <td className="text-right">00</td>
                     </tr>
                   </tbody>
 				</Table>

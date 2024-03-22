@@ -26,7 +26,7 @@ import Connexion from "views/Connexion.js";
 var routes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
+    name: "Tableau de bord",
     icon: "nc-icon nc-bank",
     component: <Dashboard />,
     layout: "/admin",
@@ -55,18 +55,22 @@ var routes = [
     component: <UserPage />,
     layout: "/admin",
   },
+  
+  
   {
     path: "/tarifs",
-    name: "tarifs",
-    icon: "nc-icon nc-paper",
+    //name: "tarifs",
+    //icon: "nc-icon nc-paper",
     component: <Tarifs />,
-    layout: "/admin",
+    //layout: "/admin",
   },
+
   {
     path: "/tables",
-    name: "Table List",
+    name: "Liste des tarifs",
     icon: "nc-icon nc-tile-56",
     component: <TableList />,
+    
     layout: "/admin",
   },
   

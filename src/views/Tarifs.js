@@ -67,7 +67,7 @@ function Tarifs() {
           <Col md="12">
             <Card>
               <CardHeader>
-                <CardTitle tag="h5">Enregistrer un tarif</CardTitle>
+                <CardTitle tag="h5">Modifier un tarif</CardTitle>
               </CardHeader>
               <CardBody>
 			  	<Form>

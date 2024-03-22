@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PerfectScrollbar from "perfect-scrollbar";
 import Sidebar from "components/Sidebar/Sidebar";
-
+import DemoNavbar from "components/Navbars/DemoNavbar";
 import Footer from "components/Footer/Footer.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
@@ -17,28 +17,25 @@ function Dashboard(props) {
   const location = useLocation();
 
   React.useEffect(() => {
-	let psInstance;
-	if (mainPanel.current && navigator.platform.indexOf("Win") > -1) {
-	  psInstance = new PerfectScrollbar(mainPanel.current);
-	  document.body.classList.toggle("perfect-scrollbar-on");
-	}
-	return function cleanup() {
-	  if (psInstance) {
-		psInstance.destroy();
-		document.body.classList.toggle("perfect-scrollbar-on");
-	  }
-	};
+    let psInstance;
+    if (mainPanel.current && navigator.platform.indexOf("Win") > -1) {
+      psInstance = new PerfectScrollbar(mainPanel.current);
+      document.body.classList.toggle("perfect-scrollbar-on");
+    }
+    return function cleanup() {
+      if (psInstance) {
+        psInstance.destroy();
+        document.body.classList.toggle("perfect-scrollbar-on");
+      }
+    };
   }, [mainPanel.current]);
-  
-  
 
   React.useEffect(() => {
-	if (mainPanel.current && mainPanel.current.scrollTop !== undefined) {
-	  mainPanel.current.scrollTop = 0;
-	  document.scrollingElement.scrollTop = 0;
-	}
+    if (mainPanel.current && mainPanel.current.scrollTop !== undefined) {
+      mainPanel.current.scrollTop = 0;
+      document.scrollingElement.scrollTop = 0;
+    }
   }, [location]);
-  
 
   const handleActiveClick = (color) => {
     setActiveColor(color);
@@ -52,21 +49,25 @@ function Dashboard(props) {
   const routesWithoutSidebarAndNavbar = ["/admin/connexion"];
 
   // Vérifie si la route actuelle fait partie de la liste des routes sans sidebar et navbar
-  const hideSidebarAndNavbar = routesWithoutSidebarAndNavbar.includes(location.pathname);
+  const hideSidebarAndNavbar = routesWithoutSidebarAndNavbar.includes(
+    location.pathname
+  );
 
   return (
     <div className="wrapper">
+      {/* Afficher le sidebar et le navbar sauf si la route actuelle est une page où ils ne doivent pas être affichés */}
       {!hideSidebarAndNavbar && (
         <>
-          {/* Afficher le sidebar uniquement si ce n'est pas une page où il ne doit pas être affiché */}
           <Sidebar
             {...props}
             routes={routes}
             bgColor={backgroundColor}
             activeColor={activeColor}
           />
-          {/* Afficher le navbar uniquement si ce n'est pas une page où il ne doit pas être affiché */}
           <div className="main-panel" ref={mainPanel}>
+            {/* Afficher le Navbar uniquement si ce n'est pas une page où il ne doit pas être affiché */}
+            <DemoNavbar {...props}
+            />
             <Routes>
               {routes.map((prop, key) => {
                 return (
@@ -109,3 +110,4 @@ function Dashboard(props) {
 }
 
 export default Dashboard;
+
